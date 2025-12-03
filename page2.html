@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -335,3 +336,342 @@ footer {
 <script src="./main.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressive Products Section</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: none; /* Light brown background color */
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);  
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        } 
+        
+        body .circle{
+            position:absolute ;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #b36982;
+            clip-path: circle(320px at left -230px);
+            z-index: -1;
+        }
+
+       h1{
+        color: #5c3b36;
+       }
+
+        header .circle{
+            position:absolute ;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #b36982;
+            clip-path: circle(320px at left -230px);
+            z-index: -1;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color:36982;
+        }
+        .buynow-btn{
+            color:white;
+            background-color: #b36982;
+            display:flex ;
+            text-shadow: #ddd;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-display: none;
+            text-align: right;
+            padding: 10px 0px;
+            border-radius: 8px;
+            border: #b36982;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .buynow-btn a{
+            text-decoration: none;
+            color: #ddd;
+        }
+        .buynow-btn:hover{
+            background-color:#853f57;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px #b36982;
+            margin: 10px; /* Reduced margin */
+            padding: 15px; /* Reduced padding */
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit:fill;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5c3b36; /* Dark brown title color */
+            margin-bottom: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .product-price {
+            font-size: 1.1em;
+            color: #5c3b36; /* Dark brown price color */
+            margin-bottom: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #666;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);  
+}
+
+section header .logo{
+    font-size:30px;
+    color:#6a6666;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+section header .logo span{
+    color:#b36982;
+}
+
+section header ul{
+    list-style: none;
+}
+
+section header ul li{
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 20px;
+}
+
+section header ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+section header ul li a:hover{
+    color: #f9004d;
+}
+
+footer {
+    background-color:#b36982; /* Dark brown footer background color */
+    color:whitesmoke;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-decoration-break: clone;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.pagination{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.pagination a{
+    border: 1px solid #ddd;
+    padding: 7px 14px;
+    text-decoration: none;
+    color:whitesmoke;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin: 10px;
+    background-color: #b36982;
+
+}
+.pagination p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #b36982;
+    font-weight: bolder;
+}
+.pagination a:hover{
+    background-color: grey;
+}
+
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <section>
+        <header>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="circle"></div>
+            <div class="circles"></div>
+            <a href="#" class="logo">Pro<span>ducts</span></a>
+            <ul  id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="new.html">New Arrival</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+    </section>
+    <div class="products-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img class="product-image" src="pro/31.png" alt="Product 1">
+            <div class="product-title">9007</div>
+            <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 9007%20like%20products">Buy Now</a></button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img class="product-image" src="pro/32.png" alt="Product 2">
+            <div class="product-title">9008</div>
+            <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 9008%20like%20products">Buy Now</a></button>
+        </div>
+      <!-- Product 1 -->
+    <div class="product-card">
+        <img class="product-image" src="pro/33.png" alt="Product 1">
+        <div class="product-title">SH-01</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-01%20like%20products">Buy Now</a></button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img class="product-image" src="pro/34.png" alt="Product 2">
+        <div class="product-title">SH-02</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-02%20like%20products">Buy Now</a></button>
+    </div>    
+
+    <div class="product-card">
+        <img class="product-image" src="pro/35.png" alt="Product 2">
+        <div class="product-title">SH-03</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-03%20like%20products">Buy Now</a></button>
+    </div>  
+
+    <div class="product-card">
+        <img class="product-image" src="pro/36.png" alt="Product 2">
+        <div class="product-title">SH-04</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-04%20like%20products">Buy Now</a></button>
+    </div>  
+
+    <div class="product-card">
+        <img class="product-image" src="pro/37.png" alt="Product 2">
+        <div class="product-title">SH-05</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-05%20like%20products">Buy Now</a></button>
+    </div>  
+
+    <div class="product-card">
+        <img class="product-image" src="pro/38.png" alt="Product 2">
+        <div class="product-title">SH-08</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-08%20like%20products">Buy Now</a></button>
+    </div>  
+
+    <div class="product-card">
+        <img class="product-image" src="pro/39.png" alt="Product 2">
+        <div class="product-title">SH-011</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-011%20like%20products">Buy Now</a></button>
+    </div>  
+
+    <div class="product-card">
+        <img class="product-image" src="pro/40.png" alt="Product 2">
+        <div class="product-title">SH-15</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-15%20like%20products">Buy Now</a></button>
+    </div>  
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img class="product-image" src="pro/41.png" alt="Product 1">
+        <div class="product-title">SH-16</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-16%20like%20products">Buy Now</a></button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img class="product-image" src="pro/42.png" alt="Product 2">
+        <div class="product-title">SH-19</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-19%20like%20products">Buy Now</a></button>
+    </div>
+
+    <div class="product-card">
+        <img class="product-image" src="pro/43.png" alt="Product 2">
+        <div class="product-title">SH-25</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-25%20like%20products">Buy Now</a></button>
+    </div>
+
+    <div class="product-card">
+        <img class="product-image" src="pro/44.png" alt="Product 2">
+        <div class="product-title">SH-30</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-30%20like%20products">Buy Now</a></button>
+    </div>
+
+    <div class="product-card">
+        <img class="product-image" src="pro/45.png" alt="Product 2">
+        <div class="product-title">SH-31</div>
+        <button class="buynow-btn"><a href="https://wa.me/+97433458454?text=i'm%20intrested%20in%20 SH-31%20like%20products">Buy Now</a></button>
+    </div>
+
+        <!-- Add more product cards as needed -->
+
+    </div>
+<div class="pagination">
+    <a href="page1.html">prev</a>
+    <p>NextPage ></p>
+    <a href="page3.html">4</a>
+    <a href="page4.html">5</a>
+    <a href="page5.html">6</a>
+    <a href="page6.html">7</a>
+</div>
+
+<footer>
+    &copy;AwardsQatar. All Rights Reserved.
+</footer>
+<script src="./main.js"></script>
+</body>
+</html>
+>>>>>>> a48458fb2acdae41082e54da445c468d5f00fa74
